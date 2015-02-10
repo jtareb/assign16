@@ -8,7 +8,10 @@ console.log(data);
  var source   = $("#nameinfo").html();
  console.log(source);
  var template = Handlebars.compile(source);
+ console.log(template);
   $("#nameinfo").html(template(data));
+  console.log(template(data));
 
 
-//*var template = Handlebars.tempate(source);
+
+//*var template = Handlebars.template(source);

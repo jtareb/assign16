@@ -26,12 +26,13 @@
 
        <script id="nameinfo" type="text/x-handlebars-template">
             {{#each nameinfo }}
-                <li>{{ username }} {{ firstname }} {{ lastname }} {{ email }}</li>
+                {{ username }} {{ firstname }} {{ lastname }} {{ email }}
             {{/each}}
        </script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="../bower_components/handlebars/handlebars.js"></script>
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/underscore/underscore.js"></script>
     <!-- endbower -->
