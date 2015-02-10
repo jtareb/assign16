@@ -7,7 +7,7 @@ console.log(data);
 
  var source   = $("#nameinfo").html();
  console.log(source);
- var template = Handlebars.template(nameinfo);
+ var template = Handlebars.compile(source);
  console.log(template);
   $("#nameinfo").html(template(data));
   console.log(template(data));
