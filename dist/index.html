@@ -11,11 +11,18 @@
 
     <link rel="stylesheet" href="styles/main.css">
 
-    <script src="scripts/vendor/modernizr.js"></script>
+   
+    
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
   </head>
   <body>
 
-   
+       <script id="nameinfo" type="text/x-handlebars-template">
+            {{#each nameinfo }}
+                <li>{{ username }} {{ firstname }} {{ lastname }} {{ email }}</li>
+            {{/each}}
+       </script>
 
     <script src="scripts/vendor.js"></script>
 
